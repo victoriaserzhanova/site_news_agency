@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+        <title>Новостное агентство</title>
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+        <script defer src="./js/jquery-3.4.1.min.js"></script>
+
+        <script defer src="./js/script.js"></script>
+
+        <meta charset="utf-8">
+    </head>
+    
+	<body>
+        <header class="header">
+            <div class="header-top">
+                <div class="fixed-container clearfix">
+                    <h1 class="header-top-title">Самые
+                        <a href="#" class="header-top-title_a">свежие новости</a> в реальном времени
+                   </h1>
+
+                   <time class="header-top-time" datetime="2020-02-26T19:40">12:30 19.06.2019</time>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="fixed-container clearfix">
+                    <a class="header-bottom-logo">
+                        <img id="logo" alt="изображение глобуса" src="img/logo.png">
+                    </a>
+
+                    <label class="moscow-wrapper">
+                        <select class="moscow-select">
+                            <option value="Msc">Москва</option>
+                        </select>
+                    </label>
+
+                    <time class="header-bottom-time" datetime="2020-02-26T19:40">19 июня, вторник
+                         <span class="header-bottom-time_span">10:48</span>
+                    </time>
+
+                    <span class="header-bottom-weather">+22&#8451;</span>
+
+                    <form class="header-bottom-form">  
+                        <input class="header-bottom-form_input" type="search" name="q" placeholder="Поиск по сайту"> 
+
+                        <button class="search-button"></button>
+                    </form> 
+
+                    <nav class="header-nav">
+                        <ul class="header-ul clearfix">
+                            <li class="header-li">
+                                <a href="#">Главная</a>
+                            </li>
+                            <li  class="header-li">
+                                <a href="#">Политика</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="#">Общество</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="#">Экономика</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="#">В мире</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="#">Проишествия</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="#">Спорт</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="#">Наука</a>
+                            </li>
+                            <li class="header-li">
+                                <a href="#">Туризм</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="fixed-container clearfix ">
+                <section class= "column-left">
+                    <h2 class="left_news-caption">Новости дня</h2>
+
+                    <ul class="left-ul">
+                        <li class="left-li">
+                            <article>                               
+                                <a href="#" class="left-article_news">
+                                    <h3 class="left-article_h3">Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018</h3>
+                                </a>
+
+                                <div class="left-props">
+                                    <a href="#" class="left-props_category">ЧМ по футболу</a>
+
+                                    <div class="left-props_right">
+                                        <time class="left-props_right_time" datetime="10:48">10:48</time>
+
+                                        <span class="left-props_right_span">15</span>  
+                                    </div>
+                                </div>                               
+                            </article>
+                        </li>
+                        <li class="left-li">
+                            <article >
+                                <a href="#" class="left-article_news">
+                                    <h3 class="left-article_h3">"Нафтогаз":суд разрешил заморозить активы "Газпрома" в Великобритании</h3>
+                                </a>
+
+                                <div class="left-props">
+                                    <a href="#" class="left-props_category">Политика</a>
+
+                                    <div class="left-props_right">
+                                        <time class="left-props_right_time" datetime="10:48">10:48</time>
+
+                                        <span class="left-props_right_span">15</span>  
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="left-li">
+                            <article>                               
+                                <a href="#" class="left-article_news">
+                                    <h3 class="left-article_h3">Минтранс предписал оборудовать общественный транспорт кондиционерами</h3>
+                                </a>
+
+                                <div class="left-props">
+                                    <a href="#" class="left-props_category">Транспорт</a>
+
+                                    <div class="left-props_right">
+                                        <time class="left-props_right_time" datetime="10:48">10:48</time>
+
+                                        <span class="left-props_right_span">15</span>  
+                                    </div>
+                                </div>                               
+                            </article>
+                        </li>
+                        <li class="left-li">
+                            <article>                           
+                                <a href="#" class="left-article_news">
+                                    <h3 class="left-article_h3">Летние кафе Москвы временно закроются из-за непогоды</h3>
+                                </a>
+
+                                <div class="left-props">
+                                    <a href="#" class="left-props_category">Погода</a>
+
+                                    <div class="left-props_right">
+                                        <time class="left-props_right_time" datetime="10:48">10:48</time>
+
+                                        <span class="left-props_right_span">15</span>  
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="left-li">
+                            <article>
+                                <a href="#" class="left-article_news">
+                                    <h3 class="left-article_h3">Комплексное благоустройство Щелковского шоссе завершится в июне</h3>
+                                </a>
+
+                                <div class="left-props">
+                                    <a href="#" class="left-props_category">Транспорт</a>
+
+                                    <div class="left-props_right">
+                                        <time class="left-props_right_time" datetime="10:48">10:48</time>
+
+                                        <span class="left-props_right_span">15</span>  
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="left-li">
+                            <article>
+                                <a href="#" class="left-article_news">
+                                    <h3 class="left-article_h3">В Москве назвали самое популярное мороженое у болельщиков ЧМ-2018</h3>
+                                </a>
+
+                                <div class="left-props">
+                                    <a href="#" class="left-props_category">ЧМ по футболу</a>   
+                                    
+                                    <div class="left-props_right">
+                                        <time class="left-props_right_time" datetime="10:48">10:48</time>
+
+                                        <span class="left-props_right_span">15</span>  
+                                    </div>
+                                </div>                         
+                            </article>
+                        </li>
+                    </ul>
+                 
+                    <section class="forexRate">
+                        <header class="forexRate__header clearfix">
+                            <h3 class="forexRate__heading">Курс валют</h3>
+
+                            <button type="button" class="forexRate__btn js-slideBtn" id='js-slideBtn' aria-label="Показать текст валют"></button>    
+                        </header>
+
+                        <div class="forexRate__error js-forexRateError">
+                            <p class="forexRate__errorText">Сервис временно недоступен</p>
+                        </div>  
+
+                        <table class="forexRate__table js-forexRate__table">                    
+                            <tbody>
+                                <tr class="forexRate__table-tr">                                   
+                                    <td class="forexRate__text_USD">
+                                        USD                                    
+                                    </td>
+
+                                    <td class="forexRate__text js-dollarToBuy"></td>
+                                </tr>
+                                <tr>
+                                    <td class="forexRate__text_EUR">
+                                        EUR
+                                    </td>
+
+                                    <td class="forexRate__text js-EuroToBuy"></td>
+                                </tr>
+                            </tbody>
+                        </table>                
+                    </section>
+                       
+                    <a href="#" class="left-button"> Все новости</a>                  
+                </section>
+
+                <section class="column-central">
+                    <h2 class="visually-hidden">Заголовок среднего столбца</h2>
+
+                    <ul class="central-ul clearfix">
+                        <li class="central_crimea_li">
+                            <article class="central-crimea_article">
+                                <img class="central_crimea_img" alt="замок в Крыму" src="img/image1.jpg">
+
+                                <div class="central_crimea_news-items">
+                                    <a href="#" class="central_crimea_politics">Политика</a>
+
+                                    <a href="#" class="central_crimea_news-caption">
+                                        <h3 class="central_crimea_news-caption_h3">В Крыму отреагировали на слова Кравчука о возврате полуострова</h3>
+                                    </a>
+                                    
+                                    <div class="central_crimea_props">
+                                        <time class="central_crimea_props_time" datetime="2020-02-26T19:40">19 июня 2018
+                                            <span class="central_crimea_props_span">10:48</span>
+                                       </time>                               
+                                    </div>                                   
+                                </div>                               
+                            </article>
+                        </li>
+                        <li class="central_li">
+                            <article class="central_article">
+                                <img class="central_img" alt="Навальный на митинге" src="img/image2.jpg">
+
+                                <div class="central_article_news-items">
+                                    <a href="#"  class="central_news-items">
+                                        <h3 class="central_news-items_h3">Алексей Навальный объявил акцию против пенсионной реформы 1 июля</h3>
+                                    </a>
+
+                                    <div class="central_props clearfix">
+                                        <a href="#" class="central_props_category">Политика</a>
+
+                                        <div class="central_props_right">
+                                            <time class="central_props_right_time" datetime="10:48">10:48</time>
+
+                                            <span class="central_props_right_span">15</span>   
+                                        </div>
+                                    </div>
+                                </div>                               
+                            </article>
+                        </li>
+                        <li class="central_li">
+                            <article class="central_article">
+                                <img class="central_img" alt="паспорта на столе" src="img/image3.jpg">
+
+                                <div class="central_article_news-items">
+                                    <a href="#"  class="central_news-items">
+                                        <h3 class="central_news-items_h3">Дума увеличила пошлины за выдачу загранпаспортов и водительских прав</h3>
+                                    </a>
+
+                                    <div class="central_props clearfix">
+                                        <a href="#" class="central_props_category">Общество</a>
+
+                                        <div class="central_props_right">
+                                            <time class="central_props_right_time" datetime="12:33">12:33</time>
+
+                                            <span class="central_props_right_span">36</span>   
+                                        </div>
+                                    </div>
+                                </div>                               
+                            </article>
+                        </li>
+                        <li class="central_li">
+                            <article class="central_article">
+                                <img class="central_img" alt="девушка слушает музыку" src="img/image4.jpg">
+
+                                <div class="central_article_news-items">
+                                    <a href="#"  class="central_news-items">
+                                        <h3 class="central_news-items_h3">В России заработал стриминговый сервис Youtube</h3>
+                                    </a>
+
+                                    <div class="central_props clearfix">
+                                        <a href="#" class="central_props_category">Интернет</a>
+
+                                        <div class="central_props_right">
+                                            <time class="central_props_right_time" datetime="11:17">11:17</time>
+
+                                            <span class="central_props_right_span">10</span>   
+                                        </div>
+                                    </div>
+                                </div>                               
+                            </article>
+                        </li>
+                        <li class="central_li">
+                            <article class="central_article">
+                                <img class="central_img" alt="футболист Кейн во время игры" src="img/image5.jpg">
+
+                                <div class="central_article_news-items">
+                                    <a href="#"  class="central_news-items">
+                                        <h3 class="central_news-items_h3">Кейн признан лучшим игроком матча ЧМ-2018 Тунис-Англия</h3>
+                                    </a>
+
+                                    <div class="central_props clearfix">
+                                        <a href="#" class="central_props_category">Политика</a>
+
+                                        <div class="central_props_right">
+                                            <time class="central_props_right_time" datetime="11:39">11:39</time>
+
+                                            <span class="central_props_right_span">25</span>   
+                                        </div>
+                                    </div>
+                                </div>                               
+                            </article>
+                        </li>                        
+                    </ul>
+                </section>
+              
+          
+                <aside class="aside">
+                    <a class="aside-content">
+                        <img class="aside-img" alt="реклама автомобиля Lexus" src="img/banner-1.png">
+                    </a>
+
+                    <a class="aside-content">
+                        <img class="aside-img" alt="реклама фитнеса" src="img/banner-2.png">
+                    </a>
+                </aside>
+
+               <section class="column-bottom ">
+                    <h2 class="bottom_news-caption">Самые читаемые новости</h2>
+
+                    <ul class="bottom-ul">
+                        <li class="bottom_pekin_li">
+                            <article  class="bottom_pekin_article">
+                                <img class="bottom_pekin_img" alt="Пекин" src="img/Pekin.jpg">
+
+                                <div class="bottom_pekin_news-items">
+                                    <a href="#" class="bottom_pekin_politics">Политика</a>
+
+                                    <a href="#" class="bottom_pekin_news-caption">
+                                        <h3 class="bottom_pekin_news-caption_h3">Пекин обвинил Вашингтон в развязывании торговой войны</h3>
+                                    </a>
+
+                                    <div class="bottom_pekin_props">
+                                        <time class="bottom_pekin_props_time" datetime="2020-02-26T19:40">19 июня 2018
+                                            <span class="bottom_pekin_props_span">10:48</span>
+                                       </time> 
+                                    </div>
+
+                                    <a href="#" class="bottom-pekin_text">Министерство коммерции Китая заявило, что Пекин примет "качественные" и "количественные" меры, если президент США Дональд Трамп введет дополнительные пошлины на китайские товары</a>
+                                </div>                               
+                            </article>
+                        </li>
+                        <li class="bottom-li">
+                            <article>
+                                <a href="#" class="bottom_news-items">
+                                    <h3 class="bottom_news-items_h3">В Турции обещали найти альтернативу из-за отказа США поставить F-35</h3>
+                                </a>
+
+                                <div class="bottom_props clearfix">
+                                    <a href="#" class="bottom_props_category">Политика</a>
+
+                                    <div class="bottom_props_right">
+                                        <time class="bottom_props_right_time" datetime="11:39">11:39</time>
+
+                                        <span class="bottom_props_right_span">25</span>   
+                                    </div>
+                                </div>                              
+                            </article>
+                        </li>
+                        <li class="bottom-li">
+                            <article>
+                                <a href="#" class="bottom_news-items">
+                                    <h3 class="bottom_news-items_h3">Назван минимальный доход для причисления к среднему классу</h3>
+                                </a>
+
+                                <div class="bottom_props clearfix">
+                                    <a href="#" class="bottom_props_category">Политика</a>
+
+                                    <div class="bottom_props_right">
+                                        <time class="bottom_props_right_time" datetime="11:39">11:39</time>
+
+                                        <span class="bottom_props_right_span">25</span>   
+                                    </div>
+                                </div>                               
+                            </article>
+                        </li> 
+                        <li class="bottom-li">
+                            <article>
+                                <a href="#" class="bottom_news-items">
+                                    <h3 class="bottom_news-items_h3">Назван минимальный доход для причисления к среднему классу</h3>
+                                </a>
+
+                                <div class="bottom_props clearfix">
+                                    <a href="#" class="bottom_props_category">Политика</a>
+
+                                    <div class="bottom_props_right">
+                                        <time class="bottom_props_right_time" datetime="11:39">11:39</time>
+
+                                        <span class="bottom_props_right_span">25</span>   
+                                    </div>
+                                </div>                            
+                            </article>
+                        </li>         
+                     </ul>
+                </section>
+            </div>
+        </main>
+                    
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="fixed-container clearfix">
+                    <div class="footer-left">
+                        <nav> 
+                            <ul class="footer-ul">
+                                <li class="footer-li">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#">Политика</a>
+                                </li>
+                                <li>
+                                    <a href="#">Общество</a>
+                                </li>
+                                <li>
+                                    <a href="#">Экономика</a>
+                                </li>
+                                <li>
+                                    <a href="#">В мире</a>
+                                </li>
+                                <li>
+                                    <a href="#">Путешествия</a>
+                                </li>
+                                <li>
+                                    <a href="#">Спорт</a>
+                                </li>
+                                <li>
+                                    <a href="#">Наука</a>
+                                </li>
+                                <li>
+                                    <a href="#">Туризм</a>
+                                </li> 
+                            </ul>
+                        </nav>  
+                    </div>
+             
+                    <div class="footer_central">
+                        <a class="footer_central_logo">
+                            <img  alt="изображение глобуса" src="./img/logo_bottom.png">
+                        </a>
+
+                        <ul class="footer_central_ul">
+                            <li>
+                                <a href="#">Об агентстве</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#">Опубликовать новость</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_right">
+                        <ul class="footer_right_socials_ul clearfix">
+                            <li class="footer_right_socials_li">
+                                <a class="socials_size footer_right_socials_vk" href="https://vk.com/" target="_blank" aria-label="мы вконтакте"></a>
+                            </li>
+                            <li class="footer_right_socials_li">
+                                <a class="socials_size footer_right_socials_fb" href="https://ru-ru.facebook.com/" target="_blank" aria-label="мы в фейсбуке"></a>
+                            </li>
+                            <li class="footer_right_socials_li">
+                                <a class="socials_size footer_right_socials_twit" href="https://twitter.com/?lang=ru" target="_blank" aria-label="мы в твиттере"></a>
+                            </li>
+                            <li class="footer_right_socials_li">
+                                <a class="socials_size footer_right_socials_inst" href="https://www.instagram.com/?hl=ru" target="_blank" aria-label="мы в инстаграме"></a>
+                            </li>
+                        </ul>
+
+                        <address class="footer_right_address">
+                            <ul class="footer_right_address_ul">
+                                <li class="address_li">
+                                    <a href="tel:+7(499)995-55-55" class="address_tel">+7(499) 995-55-55</a>
+                                </li>
+                                <li class="address_li">
+                                    <a href="mailto:info@agency.ru" class="address_mail">info@agency.ru</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="fixed-container">
+                    <p class="footer_bottom_text">
+                        <small class="footer_bottom_text_small">© Новостное агентство, 2017-2018 все права защищены</small>
+                    </p>                
+                </div>
+            </div>                                     
+        </footer>
+    </body>
+</html>

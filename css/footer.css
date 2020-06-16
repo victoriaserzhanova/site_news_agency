@@ -1,0 +1,153 @@
+.footer{
+    background-color: #00122f;
+    color: #ffffff;
+}
+.footer-top {
+    padding-top: 49px;
+    padding-bottom: 32px;
+    margin-bottom: 15px;
+    border-bottom:1px solid #26354e ;
+}
+
+.footer-left {
+    width: 250px;
+    float: left;
+    margin-right: 178px;
+}
+
+.footer-ul {
+    display: list-item;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: -0.32px;
+    columns: 2;
+    column-gap: 27px;
+    line-height: 2.05;
+}
+  
+.footer_central {
+    float: left;
+    width: 200px;
+    padding: 10px 20px 20px 10px;
+}
+
+.footer_central_logo {
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-left: -3px;
+}
+
+.footer_central_ul {
+    display: list-item;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: -0.32px;
+    line-height: 2.05;
+}
+
+.footer_right {
+    float: right;
+    width: 250px;
+    padding-top: 7px;
+    padding-left: 24px
+}
+
+.footer_right_socials_ul {
+    display: list-item;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: -0.32px;
+    line-height: 2.05;
+}
+
+.footer_right_socials_li {
+    float: left;
+    margin-right: 19px;
+} 
+.footer_right_socials_li:last-child {
+    float: left;
+    margin-right: 0;
+}
+
+.socials_size {
+    min-height: 42px;
+    min-width: 42px;
+    display: inline-block;
+}
+.footer_right_socials_vk {
+    background: url("../img/vk.png")center no-repeat;
+
+}
+
+.footer_right_socials_fb {
+    background: url("../img/fb.png")center no-repeat;
+}
+
+.footer_right_socials_twit {
+    background: url("../img/tw.png")center no-repeat;
+}
+
+.footer_right_socials_inst {
+    background: url("../img/inst.png")center no-repeat;
+}
+
+.footer_right_address {
+    padding-top: 21px;
+    padding-left: 3px;
+}
+
+.footer_right_address_ul {
+    display: list-item;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: -0.36px;
+    line-height: 2.05;
+    font-style: normal;
+}
+
+.address_li {
+    margin-bottom: 8px;
+}
+
+.address_tel {
+    padding-left: 34px;
+    background: url("../img/call-answer.png") left center no-repeat;
+}
+
+.address_mail {
+    padding-left: 33px;
+    background: url("../img/envelope.png") left center no-repeat;
+}
+
+.address_li_mail {
+    
+    padding-left: 34px;
+    margin-top: 9px;
+}
+
+.footer_bottom {
+    padding-bottom: 14px;
+}
+
+.footer_bottom_text {
+    text-align: center;
+    margin: 0;
+}
+
+.footer_bottom_text_small {
+    font-size: 100%;
+    letter-spacing: -0.3px;
+    color: rgba(255, 255, 255, 0.4);
+}
