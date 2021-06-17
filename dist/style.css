@@ -1,0 +1,706 @@
+<style>
+/* global styles START */
+:root {
+    --font-color: #000000;
+    --bg-color: #f4fbff;
+    --ingos-color: #0047bb;
+    --page-color: #ffffff;
+    --blue-color: #c5e5ff;
+  }
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    font-family: "IngoStem", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    overflow-x: hidden;
+    color: var(--font-color);
+    background-color: var(--page-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.list-reset {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+/* global styles END*/
+
+/* styles to fix ingos styles START */
+a, h1, h2, h3, h4, h5, h6, button, p, span {
+    font-family: "IngoStem", "Arial", sans-serif;
+}
+
+.page-header::before {
+    content: none;
+}
+
+.page-header,
+.page-header .pseudo span {
+    color: var(--font-color);
+    font-weight: 500;
+}
+
+#header-personal.dropdown a,
+a.header-personal.btn-outline {
+    color: var(--ingos-color);
+    font-weight: 500;
+}
+
+a.header-personal.btn-outline {
+    border: 1px solid var(--ingos-color);
+}
+
+a.header-personal.btn-outline:hover {
+    border: 1px solid var(--ingos-color);
+}
+
+.page-header a:hover,
+.page-header .pseudo span:hover,
+#header-personal.dropdown .dropdown__trigger:hover,
+.header-individuals-nav__link strong:hover {
+    color: var(--ingos-color);
+}
+
+
+.page-header__top  a:focus {
+    outline: 1px solid var(--ingos-color);
+    color: var(--ingos-color);
+}
+
+.header-individuals-nav__link strong {
+    font-size: 13px;
+    font-weight: 500;   
+    color: var(--font-color);
+}
+
+.header-individuals-nav__nav-item  {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    color: var(--font-color);
+}
+
+.header-contacts__link {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+.desktop-menu__title {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+.logo .logo-ingos,
+.header-lovision_link svg  {
+    fill: var(--ingos-color);
+}
+/* styles to fix ingos styles END */
+
+/* common styles START*/
+.btn-custom {
+    display: inline-block;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-color: var(--ingos-color);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+    opacity: 0.8; 
+    color: #ffffff;
+    transition: opacity 0.3s, color 0.3s;
+}
+
+.btn-custom:active {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+/* common styles END*/
+/* hero section START*/
+.hero {
+    position: relative;
+    min-height: 564px;
+    padding-top: 90px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/Upload/osago-new/hero-mobile.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.hero__title {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.03em;  
+    margin-bottom: 14px;  
+}
+
+.hero__descr {
+    margin: 0;
+    margin-bottom: 29px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.hero__btn {
+    margin-bottom: 15px;
+    padding: 18px 10px;
+    line-height: 1;
+    min-width: 221px;
+}
+
+.hero__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100%);
+    justify-content: space-between;
+}
+
+.hero__list-item {
+    margin-bottom: 5px;
+}
+
+.hero__heading{
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 3px;
+}
+
+.hero__text {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+}
+/* hero section END*/
+
+/* services section START*/
+.services {
+    padding-top: 19px;
+}
+
+.services__title {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.03em;  
+    margin-bottom: 25px;
+}
+
+.services__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100%);
+    justify-content: space-between;
+}
+
+.services__list-item {
+    min-height: 300px;
+    background-color: var(--bg-color);
+    background-repeat: no-repeat;
+    transition: background-color 0.3s;  
+    margin-bottom: 20px;
+}
+
+.services__list-item:hover,
+.services__list-item:focus {
+    background-color: #cfe6f3;
+    transition: background-color 0.3s;
+}
+
+.services__list-item--accident {
+    background-image: url("/Upload/osago-new/services--accident-mobile.png");
+}
+
+.services__list-item--kasko {
+    background-image: url("/Upload/osago-new/services-kasko-mobile.png");
+    background-position: right 31px top 140px;
+}
+
+.services__list-item--ingoMobile {
+    background-image: url("/Upload/osago-new/services-ingoMobile-mobile.png");
+    background-position: left 62px top 120px;
+}
+
+.services__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 36px 40px 33px 43px;
+}
+
+.services__heading {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 650;
+    letter-spacing: -0.03em;
+}
+
+.services__descr {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.services__link span {
+    font-size: 15px;
+    font-weight: 650;
+    color: var(--accent-color);
+    display: inline-block;
+    margin-top: auto;
+}
+/* services section END*/
+
+/* steps section END*/
+.steps {
+    padding: 27px 0 6px 0;
+}
+
+.steps__list {
+    min-height: 153px;
+    padding-right: 161px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    counter-reset: myCounter;
+    background-image: url("/Upload/osago-new/steps__bg_desktop.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.steps__list-item {
+    position: relative;
+    padding-left: 74px;  
+    padding-right: 65px;
+}
+
+.steps__list-item::before{
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    position: absolute;
+    left: 0;
+    top: 12%;
+    display: block; 
+    padding-top: 11px;
+    color: var(--accent-color); 
+    font-size: 24px;
+    font-weight: 650;
+    text-align: center;
+    line-height: 26px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color: #c5e5ff;
+}
+
+.steps__descr {
+    font-size: 17px;
+    letter-spacing: -0.01em;
+    font-weight: 400;
+    line-height: 20px;
+}
+/* steps section END*/
+
+/* osago-count START */
+.osago-count {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.osago__wrapper {
+    min-height: 465px;
+    padding: 33px 36px;
+    background-color: var(--bg-color); 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100%);
+}
+
+
+.osago__title {
+    font-size: 25px;
+    font-weight: 650;
+    line-height: 30px;
+    letter-spacing: -0.03em; 
+    margin-bottom: 0;
+}
+
+
+.osago-count__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.osago-count__form--top {
+    height: 150px;
+}
+
+.osago-count__input {
+    height: 50px;
+    width: 278px;
+    background-color: #ffffff;
+    color: var(--font-color);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    padding-left: 17px;
+    padding-right: 17px;
+    border: 2px solid #6ab7ff;
+    border-radius: 5px;
+}
+
+.osago-count__input::placeholder {
+    color: var(--font-color);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
+
+.osago-count__btn {
+    padding: 10px 10px;
+    width: 278px;
+}
+
+.osago-count__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.osago-count__link {
+    display: inline-block;
+    flex: 0 0 100%;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ingos-color);
+}
+
+.osago-count__link:hover {
+    text-decoration: solid underline var(--ingos-color);
+    transition: text-decoration 0.3s;
+}
+/* osago-count END */
+
+/* analytics START */
+.analytics {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.analytics__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 227px;
+    background-color: var(--bg-color);
+    padding: 17px 34px;
+}
+
+.analytics__text {
+    position: relative;
+    padding-left: 70px;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0;
+}
+
+.analytics__text:before {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background-image: url("/Upload/osago-new/analytics-info.png");
+}
+
+.analytics__links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.analytics__link {
+    display: inline-block;
+    padding-left: 77px;
+    width: 134px;
+    height: 50px;
+    padding: 14px 14px 14px 73px;
+    border-radius: 35px;
+    background-repeat: no-repeat;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: transparent;
+    color: var(--ingos-color);
+    border: 2px solid var(--ingos-color);
+    background-position: left 42px center;
+    transition: background-color 0.3s;
+}
+
+.analytics__link--yes {
+    background-image: url("/Upload/osago-new/smile-yes.svg");
+    margin-bottom: 15px;
+    margin-right: 9px;
+}
+
+.analytics__link--no {
+    background-image: url("/Upload/osago-new/smile-no.svg");  
+}
+
+.analytics__link:hover,
+.analytics__link:focus {
+    transition: background-color 0.3s;
+    background-color: #0047bb30;
+    cursor: pointer;
+}
+
+.analytics__link:active {
+    transition: background-color 0.3s;
+    background-color: transparent;
+}
+/* analytics END */
+
+@media (max-width: 374px) {
+    .osago-count__link {
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 750px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .hero::before {
+        background-image: url("/Upload/osago-new/hero-desktop.png")
+    }
+
+    .services__list-item {
+        min-height: 233px;
+        background-position: right;
+    }
+
+    .osago__wrapper {
+        min-height: 340px;
+    }
+
+    .osago-count__content {
+        justify-content: space-between;
+    }
+
+    .osago-count__link {
+        flex: 0 0 41%;
+    }
+
+    .osago-count__link--prolongation {
+        text-align: right;
+    }
+
+    .analytics__wrapper {
+        justify-content: space-between;
+    }
+
+    .analytics__text:before {
+        top: -16px;
+    }
+
+    .analytics__link--yes {
+        margin-right: 35px;
+    }
+}
+
+@media (min-width: 1185px) {
+    .container {
+        max-width: 1185px;
+    }
+
+    .hero {
+        min-height: 607px;
+        padding-top: 178px;
+    }
+    
+    .hero__title {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 0;  
+        margin-bottom: 20px;  
+    }
+
+    .hero__descr {
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    
+    .hero__btn {
+        margin-bottom: 60px;
+        min-width: 210px;
+    }
+
+    .hero__list {
+        width: 54%;
+        grid-template-columns: repeat(auto-fit, 31%);
+        justify-content: space-between;
+    }
+
+    .services {
+        padding-top: 34px;
+    }
+
+    .services__title {
+        margin-bottom: 41px;
+    }
+
+    .services__list {
+        grid-template-columns: repeat(auto-fit, 32%);
+        justify-content: space-between;
+    }
+
+    .services__list-item {
+        min-height: 422px;
+        margin-bottom: 0;
+    }
+    .services__list-item--accident {
+        background-image: url("/Upload/osago-new/services--accident-desktop.png");
+    }
+    
+    .services__list-item--kasko {
+        background-image: url("/Upload/osago-new/services-kasko-desktop.png");
+        background-position: right 31px top 160px;
+    }
+    
+    .services__list-item--ingoMobile {
+        background-image: url("/Upload/osago-new/services-ingoMobile-desktop.png");
+        background-position: left 46px top 51px;
+    }
+
+    .services__link {
+        padding: 37px 40px 37px 36px;
+    }
+
+    .osago-count {
+        padding-top: 50px;
+    }
+
+    .osago__wrapper {
+        position: relative;
+        min-height: 280px;
+        padding: 33px 0 33px 98px;
+        align-items: center;
+    }
+
+    .osago__wrapper::before {
+        content: "";
+        position: absolute;
+        background-image: url("/Upload/osago-new/osago-count-desktop.png");
+        background-color: var(--bg-color); 
+        background-repeat: no-repeat;
+        background-position: left;
+        top: 0;
+        bottom: 0;
+        left: 98%;
+        right: -100%;
+    }
+
+    .osago-count__form {
+        justify-content: initial;
+    }
+
+    .osago-count__form--top {
+        align-items: center;
+    }
+
+    .osago-count__input {
+        margin-right: 100px;
+    }
+
+    .osago-count__content {
+        /* padding: 0 25px 0 18px; */
+        width: 657px;
+    }
+
+    .osago-count__link  {
+        flex: 0 0 42%;
+    }
+
+    .osago__title {
+        margin: 0;
+    }
+
+    .osago-count__btn {
+        padding: 10px 10px;
+        min-width: 190px;
+        position: relative;
+    }
+
+    .analytics__wrapper {
+        justify-content: center;
+    }
+
+    .analytics__text {
+        margin-right: 120px;
+    }
+
+}
+</style>
