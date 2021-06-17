@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="/script.js"></script>
+</head>
+<body>
+    <!-- hero section START -->
+    <section class="hero">
+        <div class="container hero__container">
+            <h2 class="hero__title">ОСАГО</h2>
+
+            <h1 class="hero__descr">Обязательное страхование автогражданской ответственности</h1>
+
+            <form class="osago-count__form osago-count__form--top ">
+                <input class="osago-count__input" maxlength="9" type="text" name="car_number_plate_top" id="auto-number-top" placeholder="Введите госномер авто">
+                <button class="osago-count__btn btn-custom" type="button" data-mybtn="CalcTop" id="CalcTop">Рассчитать ОСАГО</button>
+            </form>
+
+            <!-- <a href="#osago-count" class="btn-custom hero__btn" data-mybtn="PreCalc" id="PreCalc">Рассчитать ОСАГО</a> -->
+
+            <ul class="hero__list list-reset">
+                <li class="hero__list-item">
+                    <h3 class="hero__heading">Платим</h3>
+
+                    <p class="hero__text"> 
+                        более 70 лет своевременных выплат
+                    </p>
+                </li>
+                <li class="hero__list-item">
+                    <h3 class="hero__heading">Решаем</h3>
+
+                    <p class="hero__text">
+                        дадим ответ по страховому случаю в течение 1 часа
+                    </p>
+                </li>
+                <li class="hero__list-item">
+                    <h3 class="hero__heading">Дарим</h3>
+
+                    <p class="hero__text">
+                        кэшбек до 10% за покупку полиса ОСАГО
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+<!-- hero section END -->
+
+<!-- services section START -->
+    <section class="services">
+        <div class="container">
+            <h2 class="services__title">Дополнительные сервисы</h2>
+
+            <ul class="services__list list-reset">
+                <li class="services__list-item services__list-item--accident">
+                    <a href="/incident/osago/" class="services__link" data-mybtn="Incident" id="Incident">
+                        <h3 class="services__heading">Страховой случай </h3>
+
+                        <p class="services__descr">Заявите о происшествии, чтобы получить помощь</p>
+                           
+                        <span>Заявить</span>
+                    </a>
+                </li>
+                <li class="services__list-item services__list-item--kasko">
+                    <a href="/auto/kasko/" class="services__link" data-mybtn="Kasko" id="Kasko">
+                        <h3 class="services__heading">КАСКО</h3>
+
+                        <p class="services__descr">Защитите автомобиль от большего количества рисков</p>
+                            
+                        <span>Купить</span>
+                    </a>
+                </li>
+                <li class="services__list-item services__list-item--ingoMobile">
+                    <a href="/app/" class="services__link" data-mybtn="App" id="App">
+                        <h3 class="services__heading">Мобильный Ингосстрах</h3>
+
+                        <p class="services__descr">Заявите о происшествии, чтобы получить помощь</p> 
+                            
+                        <span>Подробнее</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+<!-- services section END -->
+
+<!-- osago-count section START -->
+<section class="osago-count">
+<div class="container">
+    <div class="osago__wrapper" id="osago-count">
+        <h2 class="osago__title">Предварительный рассчет стоимости ОСАГО</h2>
+
+        <form class="osago-count__form">
+            <input class="osago-count__input" maxlength="9" type="text" name="car_number_plate_bottom" id="auto-number-bottom" placeholder="Введите госномер авто">
+            <button class="osago-count__btn btn-custom" type="button" data-mybtn="CalcBottom" id="CalcBottom">Рассчитать ОСАГО</button>
+        </form>
+
+        <div class="osago-count__content">
+            <a href="/auto/osago/agreement/vehicle/" class="osago-count__link" data-mybtn="CalcNoNumber" id="CalcNoNumber">Рассчитать ОСАГО без госномера</a>
+
+            <a href="/services/prolongation/" class="osago-count__link osago-count__link--prolongation" data-mybtn="ProlongOsago" id="ProlongOsago">Продлить ОСАГО</a>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="analytics">
+<div class="container">
+    <div class="analytics__wrapper">
+        <p class="analytics__text">Эта страница полезна?</p>
+
+        <div class="analytics__links">
+            <span class="analytics__link analytics__link--yes" tabindex="0" data-mybtn="Like" id="Like">Да</span>
+
+            <span class="analytics__link analytics__link--no" tabindex="0" data-mybtn="Dislike" id="Dislike">Нет</span>
+        </div>
+    </div>
+</div>
+</section>
+<!-- osago-count section END -->
+
+</body>
+
+ 
+
+
+
+
+
+</html>
+
